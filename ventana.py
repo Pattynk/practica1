@@ -24,7 +24,7 @@ def salir_aplicacion():
     ventana.quit()  # Cierra la ventana y termina el bucle
 
 # Cambiar el color de fondo de la ventana
-    ventana.config(bg="lightblue")  # Puedes cambiar "lightblue" por cualquier color que te guste
+    ventana.config(bg="lightblue")  
 
 # Crear un botón
 boton = tk.Button(ventana, text="Saludar", command=mostrar_mensaje)
