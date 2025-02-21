@@ -19,12 +19,20 @@ def mostrar_mensaje():
     texto = entrada.get()
     etiqueta.config(text=f"Hola, {texto}!")  
 
+# Función para cerrar la aplicación
+def salir_aplicacion():
+    ventana.quit()  # Cierra la ventana y termina el bucle
+
 # Cambiar el color de fondo de la ventana
     ventana.config(bg="lightblue")  # Puedes cambiar "lightblue" por cualquier color que te guste
 
 # Crear un botón
 boton = tk.Button(ventana, text="Saludar", command=mostrar_mensaje)
 boton.pack(pady=10)
+
+# Crear un botón de salir
+boton_salir = tk.Button(ventana, text="Salir", command=salir_aplicacion)
+boton_salir.pack(pady=10)
 
 # Iniciar el bucle de la aplicación
 ventana.mainloop()
